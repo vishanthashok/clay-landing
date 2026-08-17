@@ -56,11 +56,20 @@ tailwind.config.ts  Brand palette, shadows, animations
 | `clay-ut`    | `#BF5700` | UT burnt orange (used sparingly)   |
 | `clay-ink`   | `#1A1A1A` | Near-black text                    |
 
-## Things to swap before launch
+## Links & what still needs swapping
 
-- **Apply / interest-form links** — the nav `Apply` button, the hero `Apply to join` button, and the CTA `Fill out the interest form` button point at `#apply` / `#`. Replace with the Google Form URL.
-- **Instagram link** — footer link points at `https://instagram.com`; swap in the real handle.
-- **Contact email** — `clayoncampusut@gmail.com` is a placeholder.
+Links are defined as constants at the top of `app/page.tsx`.
+
+Wired up:
+
+- **Interest form** — the "Fill out the interest form" button (final CTA) points at the live Google Form.
+- **Instagram** — footer icon links to `https://www.instagram.com/texas.clay`.
+- **Email** — `clayoncampusut@gmail.com`.
+
+Still a placeholder:
+
+- **LinkedIn** (`LINKEDIN_URL`) points at `#` — swap in the club LinkedIn URL.
+- The nav `Apply` and hero `Apply to join` buttons scroll to the apply section (`#apply`) by design; the form link lives on the final CTA button.
 
 ## Deployment (Vercel)
 
